@@ -448,6 +448,39 @@ video {
   }
 }
 /* End Form */
+/* Start About Us */
+.about-us p {
+  font-size: 1.2rem;
+}
+@media (max-width: 992px) {
+  .about-us p {
+    margin-bottom: 1rem;
+  }
+}
+/* End About Us */
+/* Start Event Details */
+.event-slider {
+  height: 100vh;
+  object-fit: cover;
+}
+@media(max-width: 768px) {
+  .event-slider {
+    height: 290px;
+    object-fit: cover;
+  }
+}
+.details-event .container .cont {
+  width: 50%;
+}
+.details-event .container .cont p {
+  font-size: 1.2rem
+}
+@media (max-width: 768px) {
+  .details-event .container .cont {
+    width: 100%;
+  }
+}
+/* End Event Details */
 /* Start Footer */
 .footer {
   background-color: #252525;

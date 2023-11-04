@@ -54,8 +54,3 @@ function scrollToTop(ar) {
 }
 scrollToTop(scrolling);
 // End Scrolling To Top
-// Start Fetch On Data Events
-fetch("https://finaldoctoridea-default-rtdb.firebaseio.com/")
-  .then((response) => response.json())
-  .then((data) => console.log(data));
-// End Fetch On Data Events
