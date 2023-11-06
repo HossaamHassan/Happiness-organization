@@ -54,3 +54,10 @@ function scrollToTop(ar) {
 }
 scrollToTop(scrolling);
 // End Scrolling To Top
+
+// Start Video
+function playVideo() {
+  var video = document.getElementById("myVideo"); // Get the video element by its ID
+  video.play(); // Play the video
+}
+// End Video

@@ -463,6 +463,12 @@ video {
   height: 100vh;
   object-fit: cover;
 }
+@media(max-width: 992px) {
+  .event-slider {
+    height: 530px;
+    object-fit: cover;
+  }
+}
 @media(max-width: 768px) {
   .event-slider {
     height: 290px;
