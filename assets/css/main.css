@@ -92,6 +92,16 @@ video {
 .navbar-nav li a:hover {
   color: var(--first-color);
 }
+.navbar  .up-coming {
+  background-color: var(--first-color);
+  width: fit-content;
+  margin: auto;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+.navbar  .up-coming:hover {
+  background-color: var(--third-color);
+}
 /* End Navbar */
 /* Start Landing */
 .landing {
@@ -165,6 +175,16 @@ video {
   letter-spacing: 1px;
   margin-bottom: 20px;
   z-index: 99;
+}
+@media (max-width: 992px) {
+  .landing .content .links-on {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .landing .content .links-on {
+    font-size: 13px;
+  }
 }
 .landing .content .links-on span {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
@@ -262,7 +282,7 @@ video {
   -webkit-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
-  height: 520px;
+  height: 560px;
   background-color: white;
 }
 .latest-events .box .photo img {
@@ -289,10 +309,43 @@ video {
 .latest-events .box h3 {
   font-size: 20px;
 }
+.latest-events .box p {
+  height: 144px;
+}
+.latest-events .up-coming {
+  background-color: var(--first-color);
+  width: fit-content;
+  margin: auto;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+.latest-events .up-coming:hover {
+  background-color: var(--third-color);
+}
 /* End Latest Events */
 /* Start Gallery */
 .studio {
   overflow: hidden;
+}
+.studio-slider {
+  height: calc(100vh - 100px);
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .studio-slider {
+    height: 530px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 768px) {
+  .studio-slider {
+    height: 290px;
+    object-fit: cover;
+  }
+  .studio-slider img {
+    height: 290px;
+    object-fit: cover;
+  }
 }
 .studio .img-gallery {
   display: flex;
@@ -336,12 +389,15 @@ video {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100vh;
   position: relative;
 }
 @media (max-width: 992px) {
   .volunteer {
     height: auto;
+  }
+  .volunteer h2 {
+    text-align: center;
+    margin-bottom: 1rem;
   }
 }
 .volunteer::before {
@@ -363,7 +419,7 @@ video {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
-.volunteer input:last-child {
+.volunteer a {
   border: 1px solid rgba(255, 255, 255, 0.4) !important;
   border-color: rgba(255, 255, 255, 0.8);
   background: white;
@@ -377,7 +433,7 @@ video {
   box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.5);
   width: fit-content;
 }
-.volunteer input:last-child:hover {
+.volunteer a:hover {
   background-color: black;
   color: white;
 }
@@ -399,11 +455,6 @@ video {
   border-color: white;
   outline: none;
   box-shadow: 0 1px 0 -1px white;
-}
-@media (max-width: 992px) {
-  .volunteer img {
-    display: none;
-  }
 }
 /* End Volunteer */
 /* Start Form */
@@ -458,18 +509,66 @@ video {
   }
 }
 /* End About Us */
+/* Start Our Board */
+.our-board .yasser {
+  width: 32%;
+  margin: auto;
+  }
+@media (max-width: 992px) {
+  .our-board .yasser {
+  width: 50%;
+  margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .our-board .yasser {
+  width: 100%;
+  margin: auto;
+  }
+}
+.our-board .ad {
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 992px) {
+  .our-board .ad {
+    width: 100%;
+  }
+}
+.our-board .board-details {
+  -webkit-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
+}
+.our-board img {
+  height: 490px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.our-board .board-details .pic .info {
+  bottom: -100%;
+  background-color: #000000bf;
+  transition: 0.3s;
+  color: white;
+  height: 100%;
+}
+.our-board .board-details .pic:hover .info {
+  bottom: 0;
+}
+/* End Our Board */
 /* Start Event Details */
 .event-slider {
   height: 100vh;
   object-fit: cover;
 }
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .event-slider {
     height: 530px;
     object-fit: cover;
   }
 }
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .event-slider {
     height: 290px;
     object-fit: cover;
@@ -479,7 +578,7 @@ video {
   width: 50%;
 }
 .details-event .container .cont p {
-  font-size: 1.2rem
+  font-size: 1.2rem;
 }
 @media (max-width: 768px) {
   .details-event .container .cont {

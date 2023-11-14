@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image /x-icon" href="./img/logo.ico" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
@@ -18,7 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Dosis:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>About Us | Happiness Organization</title>
+    <title>Event Details | Happiness Organization</title>
   </head>
   <body>
     <!-- Start Navbar -->
@@ -64,12 +65,20 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="./our-board.html">Our Board</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link active-1" href="./events.html">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contact-us.html">Contact</a>
             </li>
           </ul>
+          <a
+          href="https://app.autobooks.co/pay/happiness-organization-for-human-relief"
+          class="btn up-coming"
+          >Pay Online</a
+        >
         </div>
       </div>
     </nav>
@@ -77,33 +86,35 @@
     <!-- Start Details -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
       <div class="carousel-inner event-slider">
-        <div class="carousel-item active">
-          <img
-            src="./img/event-1/PHOTO-2023-10-18-15-09-54_9.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+        <div class="carousel-item active" id="carousel-item1">
+          <img id="image-1" class="d-block w-100" alt="..." src="" />
         </div>
-        <div class="carousel-item">
-          <img
-            src="./img/event-1/PHOTO-2023-10-18-15-09-53.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+        <div class="carousel-item" id="carousel-item2">
+          <img id="image-2" class="d-block w-100" alt="..." />
         </div>
-        <div class="carousel-item">
-          <img
-            src="./img/event-1/PHOTO-2023-10-18-15-09-54.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+        <div class="carousel-item" id="carousel-item3">
+          <img id="image-3" class="d-block w-100" alt="..." />
         </div>
-        <div class="carousel-item">
-          <img
-            src="./img/event-1/PHOTO-2023-10-18-15-09-54_5.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+        <div class="carousel-item" id="carousel-item4">
+          <img id="image-4" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" id="carousel-item5">
+          <img id="image-5" src="" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" id="carousel-item6">
+          <img id="image-6" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" id="carousel-item7">
+          <img id="image-7" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" id="carousel-item8">
+          <img id="image-8" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" id="carousel-item9">
+          <img id="image-9" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" id="carousel-item10">
+          <img id="image-10" class="d-block w-100" alt="..." />
         </div>
       </div>
       <button
@@ -128,20 +139,13 @@
     <!-- End Details -->
     <!-- Start Details Event -->
     <div class="details-event mt-3 mb-5">
-        <h2 class="text-center mb-2 fw-bold">Saturday 5/16/2021, Eid El-Fitr Celebration</h2>
+      <h2 class="text-center mb-2 fw-bold" id="head"></h2>
       <div class="container">
-        <div class="cont">
-            <p>1- Crown Plaza, Saddle Brook</p>
-            <p>
-                2- Happiness Organization held its first public event after being
-              established
-            </p>
-            <p>
-              3- After a month of fasting, Happiness had Eid Celebration With enjoyed
-              themselves and congratulated the organization on its first successful
-              event
-            </p>
-            <p></p>
+        <div class="cont d-flex flex-column gap-2 mt-4">
+          <p id="cont-one"></p>
+          <p id="cont-two"></p>
+          <p id="cont-three"></p>
+          <p id="cont-four"></p>
         </div>
       </div>
     </div>
@@ -232,16 +236,19 @@
               <h2 class="text-white text-uppercase">Site links</h2>
               <ul class="d-flex flex-column gap-3">
                 <li>
-                  <a href="#" class="site-link"> Home </a>
+                  <a href="./index.html" class="site-link"> Home </a>
                 </li>
                 <li>
-                  <a href="#" class="site-link"> Events </a>
+                  <a href="./About.html" class="site-link"> About </a>
                 </li>
                 <li>
-                  <a href="#" class="site-link"> Contact </a>
+                  <a href="./our-board.html" class="site-link"> Our Board</a>
                 </li>
                 <li>
-                  <a href="#" class="site-link"> About </a>
+                  <a href="./events.html" class="site-link"> Events </a>
+                </li>
+                <li>
+                  <a href="./contact-us.html" class="site-link">Contact</a>
                 </li>
               </ul>
             </div>
@@ -286,6 +293,83 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      const url = new URL(window.location.href);
+      // Content
+      const parameterValueOne = url.searchParams.get("all_content_1");
+      const parameterValueTwo = url.searchParams.get("all_content_2");
+      const parameterValueThree = url.searchParams.get("all_content_3");
+      const parameterValueFour = url.searchParams.get("all_content_4");
+      const contOne = document.getElementById("cont-one");
+      const contTwo = document.getElementById("cont-two");
+      const contThree = document.getElementById("cont-three");
+      const contFour = document.getElementById("cont-four");
+      contOne.appendChild(document.createTextNode(parameterValueOne));
+      contTwo.appendChild(document.createTextNode(parameterValueTwo));
+      contThree.appendChild(document.createTextNode(parameterValueThree));
+      contFour.appendChild(document.createTextNode(parameterValueFour));
+      // Head
+      const parameterValueHead = url.searchParams.get("head");
+      const head = document.getElementById("head");
+      head.appendChild(document.createTextNode(parameterValueHead));
+      // Images
+      const parameterValueImage1 = url.searchParams.get("image1");
+      const parameterValueImage2 = url.searchParams.get("image2");
+      const parameterValueImage3 = url.searchParams.get("image3");
+      const parameterValueImage4 = url.searchParams.get("image4");
+      const parameterValueImage5 = url.searchParams.get("image5");
+      const parameterValueImage6 = url.searchParams.get("image6");
+      const parameterValueImage7 = url.searchParams.get("image7");
+      const parameterValueImage8 = url.searchParams.get("image8");
+      const parameterValueImage9 = url.searchParams.get("image9");
+      const parameterValueImage10 = url.searchParams.get("image10");
+
+      const carouselItem1 = document.getElementById("carousel-item1");
+      const carouselItem2 = document.getElementById("carousel-item2");
+      const carouselItem3 = document.getElementById("carousel-item3");
+
+      const carouselItem4 = document.getElementById("carousel-item4");
+      const carouselItem5 = document.getElementById("carousel-item5");
+      const carouselItem6 = document.getElementById("carousel-item6");
+
+      const carouselItem7 = document.getElementById("carousel-item7");
+      const carouselItem8 = document.getElementById("carousel-item8");
+      const carouselItem9 = document.getElementById("carousel-item9");
+      const carouselItem10 = document.getElementById("carousel-item10");
+
+      const images1 = document.getElementById("image-1");
+      const images2 = document.getElementById("image-2");
+      const images3 = document.getElementById("image-3");
+      const images4 = document.getElementById("image-4");
+      const images5 = document.getElementById("image-5");
+      const images6 = document.getElementById("image-6");
+      const images7 = document.getElementById("image-7");
+      const images8 = document.getElementById("image-8");
+      const images9 = document.getElementById("image-9");
+      const images10 = document.getElementById("image-10");
+
+      images1.src = `${parameterValueImage1}`;
+      images2.src = `${parameterValueImage2}`;
+      images3.src = `${parameterValueImage3}`;
+      images4.src = `${parameterValueImage4}`;
+      images5.src = `${parameterValueImage5}`;
+      images6.src = `${parameterValueImage6}`;
+      images7.src = `${parameterValueImage7}`;
+      images8.src = `${parameterValueImage8}`;
+      images9.src = `${parameterValueImage9}`;
+      images10.src = `${parameterValueImage10}`;
+      console.log(parameterValueImage1);
+      carouselItem1.appendChild(images1);
+      carouselItem2.appendChild(images2);
+      carouselItem3.appendChild(images3);
+      carouselItem4.appendChild(images4);
+      carouselItem5.appendChild(images5);
+      carouselItem6.appendChild(images6);
+      carouselItem7.appendChild(images7);
+      carouselItem8.appendChild(images8);
+      carouselItem9.appendChild(images9);
+      carouselItem10.appendChild(images10);
     </script>
   </body>
 </html>

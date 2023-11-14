@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image /x-icon" href="./img/logo.ico" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
@@ -43,6 +44,7 @@
           >
             <span style="color: #f7ca44">Happiness</span>
             <span style="color: #6a6a6a">Organization</span>
+            <!-- <span style="color: #6a6a6a">For Human Relief</span> -->
           </div>
         </a>
         <button
@@ -56,7 +58,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          class="collapse navbar-collapse mb-2 mb-lg-0"
+          id="navbarSupportedContent"
+        >
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
@@ -70,12 +75,20 @@
               <a class="nav-link" href="./About.html">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="./our-board.html">Our Board</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="./events.html">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contact-us.html">Contact</a>
             </li>
           </ul>
+          <a
+            href="https://app.autobooks.co/pay/happiness-organization-for-human-relief"
+            class="btn up-coming"
+            >Pay Online</a
+          >
         </div>
       </div>
     </nav>
@@ -85,7 +98,9 @@
       <div class="bg-img">
         <img class="mw-100" src="./img/home-banner.jpg" alt="" />
         <div class="content">
-          <h1 class="mb-4">Doing Nothing is Not An Option of Our Life</h1>
+          <h1 class="mb-4" data-aos="zoom-in" data-aos-duration="1500">
+            Doing Nothing is Not An Option of Our Life
+          </h1>
           <a
             href="#video"
             class="good-btn btn btn-white btn-outline-white px-4 py-3 popup-vimeo d-flex align-items-center justify-content-center m-auto gap-2"
@@ -105,10 +120,11 @@
           data-aos-duration="500"
         >
           <div class="serve d-flex flex-column flex-lg-row">
-            <div class="served d-flex flex-column gap-2">
-              <span>Served Over</span>
-              <strong>1,000,000</strong>
-              <span>Children in 190 countries in the world</span>
+            <div
+              style="flex: 1"
+              class="served d-flex flex-column gap-2 align-items-center justify-content-center"
+            >
+              <span>Help Kids and women all over the world</span>
             </div>
             <div class="served-one d-flex flex-column gap-4">
               <h3>Donate Money</h3>
@@ -116,7 +132,12 @@
                 Even the all-powerful Pointing has no control about the blind
                 texts.
               </p>
-              <a href="#" class="px-3 py-2 good-btn">Donate Now</a>
+              <a
+                href="https://app.autobooks.co/pay/happiness-organization-for-human-relief"
+                target="_blank"
+                class="px-3 py-2 good-btn"
+                >Donate Now</a
+              >
             </div>
             <div class="served-two d-flex flex-column gap-4">
               <h3>Be a Volunteer</h3>
@@ -124,7 +145,7 @@
                 Even the all-powerful Pointing has no control about the blind
                 texts.
               </p>
-              <a href="#" class="px-3 py-2 good-btn">Be A Volunteer</a>
+              <a href="./contact-us.html" class="px-3 py-2 good-btn">Be A Volunteer</a>
             </div>
           </div>
         </div>
@@ -186,16 +207,17 @@
     </div>
     <!-- End Media -->
     <!-- Start Latest Events -->
-    <div
-      class="latest-events mt-5 py-5"
-      data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1000"
-    >
+    <div class="latest-events mt-5 py-5">
       <div class="container">
         <h2 class="text-center mb-5">OUR LATEST EVENTS</h2>
-        <div class="row">
-          <div class="col-lg-4 mb-3">
+        <div
+          class="row"
+          id="row-two"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+        >
+          <!-- <div class="col-lg-4 mb-3">
             <div class="box">
               <div class="photo">
                 <img class="mw-100" src="./img/event.jpeg" alt="" />
@@ -233,92 +255,69 @@
                 </a>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 mb-3">
-            <div class="box">
-              <div class="photo">
-                <img class="mw-100" src="./img/5.jpeg" alt="" />
-              </div>
-              <div class="description py-4 px-3 d-flex flex-column gap-3">
-                <div class="calender-loc">
-                  <i
-                    style="color: var(--third-color); padding-right: 2px"
-                    class="fa-solid fa-calendar-days"
-                  ></i>
-                  <span class="text-secondary">Sep. 10, 2023</span>
-                </div>
-                <h3>World Wide Donation</h3>
-                <div class="time-loc">
-                  <i
-                    style="color: var(--third-color); padding-right: 2px"
-                    class="fa-regular fa-clock"
-                  ></i>
-                  <span class="text-secondary">10:30AM-03:30PM</span>
-                </div>
-                <p class="text-secondary">
-                  A small river named Duden flows by their place and supplies it
-                  with the necessary regelialia.
-                </p>
-                <a
-                  style="color: var(--third-color)"
-                  href="#"
-                  class="btn d-flex gap-2 align-items-center p-0"
-                >
-                  Join Event
-                  <i
-                    style="padding-bottom: 2px"
-                    class="fa-solid fa-chevron-right"
-                  ></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mb-3">
-            <div class="box">
-              <div class="photo">
-                <img class="mw-100" src="./img/6.jpeg" alt="" />
-              </div>
-              <div class="description py-4 px-3 d-flex flex-column gap-3">
-                <div class="calender-loc">
-                  <i
-                    style="color: var(--third-color); padding-right: 2px"
-                    class="fa-solid fa-calendar-days"
-                  ></i>
-                  <span class="text-secondary">Sep. 10, 2023</span>
-                </div>
-                <h3>World Wide Donation</h3>
-                <div class="time-loc">
-                  <i
-                    style="color: var(--third-color); padding-right: 2px"
-                    class="fa-regular fa-clock"
-                  ></i>
-                  <span class="text-secondary">10:30AM-03:30PM</span>
-                </div>
-                <p class="text-secondary">
-                  A small river named Duden flows by their place and supplies it
-                  with the necessary regelialia.
-                </p>
-                <a
-                  style="color: var(--third-color)"
-                  href="#"
-                  class="btn d-flex gap-2 align-items-center p-0"
-                >
-                  Join Event
-                  <i
-                    style="padding-bottom: 2px"
-                    class="fa-solid fa-chevron-right"
-                  ></i>
-                </a>
-              </div>
-            </div>
-          </div>
+          </div> -->
         </div>
+        <a
+          href="./upcoming-events.html"
+          class="btn main-btn d-flex align-items-center justify-content-center up-coming"
+          >Up Coming Events</a
+        >
       </div>
     </div>
     <!-- End Latest Events -->
     <!-- Start Gallery -->
     <div class="studio mt-5">
       <h2 class="text-center mb-5 text-uppercase">Gallery</h2>
+      <!-- <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide studio-slider"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/event.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/2.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/3.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/4.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/5.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/6.jpeg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="./img/7.jpeg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->
       <div class="img-gallery">
         <div class="box">
           <img class="mw-100" src="./img/event.jpeg" alt="" />
@@ -351,53 +350,27 @@
     <p id="video"></p>
     <div style="background-color: #f9f9f9" class="video pt-5 pb-5">
       <div class="container">
-        <video id="myVideo" controls style="width: 100%" autoplay loop>
-          <source
-            src="./img/WhatsApp Video 2023-10-17 at 7.08.41 PM.mp4"
-            type="video/mp4"
-          />
+        <video id="myVideo" controls style="width: 100%" loop>
+          <source src="./img/Video.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
     <!-- End Video -->
     <!-- Start volunteer -->
-    <div class="volunteer pt-5">
+    <div class="volunteer pt-5 pb-5">
       <div class="container position-relative">
         <div class="row d-flex align-items-center justify-content-center">
-          <div class="col-lg-6">
-            <form action="/" class="contact-form pt-3">
-              <h3 class="mb-4 text-white">Be a volunteer</h3>
-              <input
-                class="form-control"
-                type="text"
-                placeholder="Full Name"
-                name=""
-                id="name"
-              /><br />
-              <input
-                class="form-control"
-                type="text"
-                placeholder="Email"
-                name=""
-                id="email"
-              /><br />
-              <textarea
-                class="form-control"
-                name=""
-                placeholder="Message"
-                id="message"
-                cols="30"
-                rows="5"
-              ></textarea
-              ><br />
-              <input
-                class="good-btn mb-3 py-3 px-5"
-                type="submit"
-                id="send-btn"
-                class="submit"
-                value="Send Message"
-              />
-            </form>
+          <div
+          class="col-lg-6 d-flex align-items-center justify-content-center flex-column gap-4"
+          >
+          <h2 class="text-white">Be A Volunteer</h2>
+            <a
+              href="./contact-us.html"
+              class="good-btn mb-3 py-3 px-5"
+              type="submit"
+              id="send-btn"
+              >Contact Us</a
+            >
           </div>
           <div class="col-lg-6">
             <div class="pic position-relative">
@@ -421,13 +394,15 @@
               </p>
               <ul class="social-icons d-flex gap-3">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/profile.php?id=100067013510605"
+                  target="_blank"
                   class="d-flex align-items-center justify-content-center social-icon"
                 >
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/happiness_organization_2022/"
+                  target="_blank"
                   class="d-flex align-items-center justify-content-center social-icon"
                 >
                   <i class="fa-brands fa-instagram"></i>
@@ -493,16 +468,19 @@
               <h2 class="text-white text-uppercase">Site links</h2>
               <ul class="d-flex flex-column gap-3">
                 <li>
-                  <a href="#" class="site-link"> Home </a>
+                  <a href="./index.html" class="site-link"> Home </a>
                 </li>
                 <li>
-                  <a href="#" class="site-link"> Events </a>
+                  <a href="./About.html" class="site-link"> About </a>
                 </li>
                 <li>
-                  <a href="#" class="site-link"> Contact </a>
+                  <a href="./our-board.html" class="site-link"> Our Board</a>
                 </li>
                 <li>
-                  <a href="#" class="site-link"> About </a>
+                  <a href="./events.html" class="site-link"> Events </a>
+                </li>
+                <li>
+                  <a href="./contact-us.html" class="site-link">Contact</a>
                 </li>
               </ul>
             </div>
@@ -516,14 +494,14 @@
                 >
                   <i class="fa-solid fa-location-dot"></i>
                   <p style="color: #a19f9f">
-                    203 Fake St. Mountain View, San Francisco, California, USA
+                    P. O. Box 209, New York, NY 10101
                   </p>
                 </div>
                 <div
                   class="info-one d-flex align-items-center gap-3 text-white"
                 >
                   <i class="fa-solid fa-phone"></i>
-                  <p style="color: #a19f9f">+2 392 3929 210</p>
+                  <p style="color: #a19f9f">+1 (718) 790-0497</p>
                 </div>
                 <div
                   class="info-one d-flex align-items-center gap-3 text-white"

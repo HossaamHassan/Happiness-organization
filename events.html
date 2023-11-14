@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image /x-icon" href="./img/logo.ico" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
@@ -67,12 +68,20 @@
               <a class="nav-link" href="./About.html">About</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="./our-board.html">Our Board</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link active-1" href="./events.html">Events</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contact-us.html">Contact</a>
             </li>
           </ul>
+          <a
+            href="https://app.autobooks.co/pay/happiness-organization-for-human-relief"
+            class="btn up-coming"
+            >Pay Online</a
+          >
         </div>
       </div>
     </nav>
@@ -90,11 +99,7 @@
             >
             <span>Contact</span>
           </p>
-          <h1
-            class="mb-3 bread"
-            data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
-            style="opacity: 1; transform: translateZ(0px) translateY(0%)"
-          >
+          <h1 class="mb-3 bread" data-aos="zoom-in" data-aos-duration="1500">
             Events
           </h1>
         </div>
@@ -102,15 +107,17 @@
     </div>
     <!-- End Landing -->
     <!-- Start Events -->
-    <div
-      class="latest-events py-5"
-      data-aos="fade-down"
-      data-aos-easing="linear"
-      data-aos-duration="1000"
-    >
+    <div class="latest-events py-5">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-3">
+        <h2 class="text-center mb-5 mt-5 text-uppercase">Events</h2>
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
+          class="row"
+          id="row"
+        >
+          <!-- <div class="col-lg-4 mb-3">
             <div class="box">
               <div class="photo">
                 <img class="mw-100" src="./img/event.jpeg" alt="" />
@@ -226,7 +233,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -316,16 +323,19 @@
               <h2 class="text-white text-uppercase">Site links</h2>
               <ul class="d-flex flex-column gap-3">
                 <li>
-                  <a href="#" class="site-link"> Home </a>
+                  <a href="./index.html" class="site-link"> Home </a>
                 </li>
                 <li>
-                  <a href="#" class="site-link"> Events </a>
+                  <a href="./About.html" class="site-link"> About </a>
                 </li>
                 <li>
-                  <a href="#" class="site-link"> Contact </a>
+                  <a href="./our-board.html" class="site-link"> Our Board</a>
                 </li>
                 <li>
-                  <a href="#" class="site-link"> About </a>
+                  <a href="./events.html" class="site-link"> Events </a>
+                </li>
+                <li>
+                  <a href="./contact-us.html" class="site-link">Contact</a>
                 </li>
               </ul>
             </div>
