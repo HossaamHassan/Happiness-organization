@@ -47,6 +47,23 @@ video {
     height: unset;
   }
 }
+.coming {
+  width: 30%;
+  margin: auto;
+  margin-top: unset;
+}
+@media (max-width:992px) {
+  .coming {
+    width: 52%;
+    margin: auto;
+  }
+}
+@media (max-width:768px) {
+  .coming {
+    width: 100%;
+    margin: unset;
+  }
+}
 /* End Global Rules */
 /* Start Scrolling */
 .arrow {
@@ -295,6 +312,12 @@ video {
   background-color: white;
   margin: 0 auto;
   margin-top: -40px;
+  position: relative;
+}
+.latest-events .box .descriptions {
+  width: 90%;
+  background-color: white;
+  margin: 0 auto;
   position: relative;
 }
 @media (max-width: 992px) {

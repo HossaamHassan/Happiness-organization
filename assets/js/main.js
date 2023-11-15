@@ -166,7 +166,7 @@ function fetchOnUpComing() {
       data.forEach((info) => {
         // Col
         const col = document.createElement("div");
-        col.className = `col-lg-4 mb-3`;
+        col.className = `col-lg-4 mb-3 coming`;
         rowOne.appendChild(col);
 
         // Box
@@ -187,7 +187,7 @@ function fetchOnUpComing() {
 
         // Desc
         const desc = document.createElement("div");
-        desc.className = `description py-4 px-3 d-flex flex-column gap-3`;
+        desc.className = `descriptions py-4 px-3 d-flex flex-column gap-3`;
         box.appendChild(desc);
 
         // Calender
