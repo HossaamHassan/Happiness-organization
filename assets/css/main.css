@@ -64,6 +64,11 @@ video {
     margin: unset;
   }
 }
+@media (max-width: 992px) {
+  .or {
+    order: -1;
+  }
+}
 /* End Global Rules */
 /* Start Scrolling */
 .arrow {
