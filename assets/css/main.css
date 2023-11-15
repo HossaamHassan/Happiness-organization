@@ -92,14 +92,14 @@ video {
 .navbar-nav li a:hover {
   color: var(--first-color);
 }
-.navbar  .up-coming {
+.up-coming {
   background-color: var(--first-color);
   width: fit-content;
   margin: auto;
   padding: 10px 20px;
   transition: 0.3s;
 }
-.navbar  .up-coming:hover {
+.up-coming:hover {
   background-color: var(--third-color);
 }
 /* End Navbar */
