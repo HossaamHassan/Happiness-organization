@@ -62,6 +62,11 @@ function playVideo() {
 }
 // End Video
 
+// Start Fetch On Data footer
+
+
+// End Fetch On Data footer
+
 // Start Fetch On Latest Events
 function fetchOnLatestEvents() {
   const rowTwo = document.getElementById("row-two");
@@ -70,7 +75,6 @@ function fetchOnLatestEvents() {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       data.forEach((info) => {
         // Col
         const col = document.createElement("div");
@@ -159,7 +163,6 @@ function fetchOnUpComing() {
   )
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       data.forEach((info) => {
         // Col
         const col = document.createElement("div");
@@ -342,3 +345,4 @@ function fetchOnDataOne() {
 }
 
 fetchOnDataOne();
+// End Fetch On Data One
