@@ -176,13 +176,14 @@ function fetchOnUpComing() {
 
         // photo
         const photo = document.createElement("div");
-        photo.className = `photo`;
+        photo.className = `photo d-flex justify-content-center pt-2`;
         box.appendChild(photo);
 
         // img
         const img = document.createElement("img");
         img.className = `mw-100`;
         img.src = `${info.image1}`;
+        img.style.width = `181.5px`;
         photo.appendChild(img);
 
         // Desc
