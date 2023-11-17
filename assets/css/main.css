@@ -69,6 +69,11 @@ video {
     order: -1;
   }
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  padding: 5px;
+}
 /* End Global Rules */
 /* Start Scrolling */
 .arrow {
